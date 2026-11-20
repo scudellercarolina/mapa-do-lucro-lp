@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mapa do Lucro | Pare de vender no escuro</title>
+<meta name="description" content="A planilha criada dentro de um brechó que fatura 6 dígitos por mês. Descubra onde seu brechó ganha e onde perde dinheiro.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mapa do Lucro | Pare de vender no escuro">
+<meta property="og:description" content="A planilha criada dentro de um brechó que fatura 6 dígitos por mês.">
+<meta property="og:image" content="og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2246%22 fill=%22%23b44cc4%22/><text x=%2250%22 y=%2266%22 font-size=%2248%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22Arial%22 font-weight=%22bold%22>M</text></svg>">
+<link rel="preload" as="image" href="img/hero_fan.webp">
+<!-- Microsoft Clarity: mapa de calor e gravações (projeto "Mapa do Lucro - Página de Vendas") -->
+<script type="text/javascript">
+(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","zgnb1bo5hf");
+</script>
+<!-- Meta Pixel: cole aqui o código do Pixel que o Robson enviar -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,500;0,700;0,800;1,800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1c1220;
+    --soft:#5b5060;
+    --accent:#b44cc4;      /* lilás do "no escuro" */
+    --cta:#2f9e6b;         /* verde do botão atual, um tom mais firme */
+    --cta-hover:#268a5c;
+    --line:#eee8ef;
+    --tint:#faf6fb;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:#fff;color:var(--ink);font-family:Karla,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:600px;margin:0 auto;padding:0 22px}
+  section{padding:56px 0;text-align:center}
+  section + section{border-top:1px solid var(--line)}
+  .brand{font-size:12px;letter-spacing:.32em;text-transform:uppercase;font-weight:700;padding:26px 0 0;text-align:center;color:var(--soft)}
+  .brand b{color:var(--accent)}
+  h1,h2{font-weight:800;letter-spacing:-.025em;line-height:1.05;margin:0 0 18px}
+  h1{font-size:clamp(42px,11vw,64px)}
+  h2{font-size:clamp(30px,7.6vw,42px)}
+  .hl{color:var(--accent)}
+  p{font-size:18px;line-height:1.55;color:var(--soft);margin:0 auto 14px;max-width:30em}
+  p strong{color:var(--ink)}
+  .shot{margin:30px auto 8px;border-radius:18px;overflow:hidden;box-shadow:0 18px 50px -18px rgba(60,20,70,.28);border:1px solid var(--line);background:#fff}
+  .shot img{display:block;width:100%;height:auto}
+  .cap{font-size:12.5px;color:#9a8f9e;margin-top:10px}
+  .wide{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:14px;margin:30px 0 8px}
+  .photos{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0}
+  .photos img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:14px;display:block}
+  .stats{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:22px}
+  .stat{background:var(--tint);border:1px solid var(--line);border-radius:999px;padding:9px 16px;font-size:15px;font-weight:700}
+  .stat span{color:var(--accent)}
+  .list{list-style:none;padding:0;margin:26px auto 0;text-align:left;max-width:440px}
+  .list li{display:flex;gap:12px;align-items:flex-start;font-size:17px;line-height:1.45;padding:11px 0;border-bottom:1px solid var(--line);color:var(--soft)}
+  .list li:last-child{border-bottom:0}
+  .list b{color:var(--ink)}
+  .dot{flex:none;width:22px;height:22px;border-radius:50%;background:var(--accent);color:#fff;font-size:13px;font-weight:800;display:grid;place-items:center;margin-top:2px}
+  .ig{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:28px}
+  .igc{border:1px solid var(--line);border-radius:16px;padding:18px 14px;text-align:left}
+  .igc .h{font-weight:800;font-size:15px;display:flex;align-items:center;gap:6px}
+  .igc .v{width:15px;height:15px;border-radius:50%;background:#3897f0;color:#fff;font-size:10px;display:grid;place-items:center}
+  .igc .n{font-size:30px;font-weight:800;margin-top:10px;letter-spacing:-.02em}
+  .igc .l{font-size:13px;color:var(--soft)}
+  .big{font-size:clamp(46px,12vw,64px);font-weight:800;color:var(--accent);letter-spacing:-.03em;line-height:1;margin:6px 0 10px}
+  .mock{margin:30px -3% 8px}
+  .mock img{display:block;width:100%;height:auto}
+  .mock.fan{margin:26px -16% 4px}
+  @media (max-width:520px){ .mock.fan{margin:22px -18px 4px} }
+  .mock.wide2{margin:28px -10% 4px}
+  @media (max-width:520px){ .mock.wide2{margin:24px -14px 4px} }
+  .browser{position:relative;max-width:470px;margin:30px auto 46px;background:#f6f3f7;border:1px solid var(--line);border-radius:18px;box-shadow:0 24px 50px -28px rgba(60,20,70,.4);text-align:left}
+  .bbar{display:flex;align-items:center;gap:7px;padding:12px 14px}
+  .bbar i{width:10px;height:10px;border-radius:50%;background:#ff5f57}.bbar i:nth-child(2){background:#febc2e}.bbar i:nth-child(3){background:#28c840}
+  .bbar span{flex:1;height:12px;border-radius:6px;background:#e9e3eb;margin-left:10px}
+  .bbody{background:#fff;margin:0 14px 16px;border-radius:12px;padding:16px 18px 62px;border:1px solid var(--line)}
+  .bmeta{font-size:12.5px;color:#9a8f9e;display:flex;justify-content:space-between}.bmeta b{letter-spacing:.1em}
+  .brow{display:flex;gap:14px;align-items:center;margin-top:16px}
+  .bt{font-weight:800;font-size:17px;letter-spacing:.02em}.bs{font-size:13.5px;color:var(--soft)}
+  .badge{position:absolute;right:-14px;bottom:-30px;transform:rotate(-4deg);background:linear-gradient(120deg,#e7a33c 0%,#e2559b 55%,#9a4dd6 100%);color:#fff;border-radius:16px;padding:14px 22px 16px;box-shadow:0 18px 30px -12px rgba(150,50,140,.6);text-align:left}
+  .bn{font-size:38px;font-weight:800;letter-spacing:-.03em;line-height:1}.bl{font-size:13.5px;font-weight:700;line-height:1.25;margin-top:4px}
+  @media (max-width:520px){ .badge{right:-6px} }
+  .mock.sm{margin:-6px -6% 18px}
+  /* Oferta */
+  .offer{background:var(--tint);border-top:0}
+  .card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:30px 22px 26px;box-shadow:0 24px 60px -30px rgba(60,20,70,.35)}
+  .card .shot{margin:0 0 22px;box-shadow:none}
+  .pname{font-size:13px;letter-spacing:.28em;text-transform:uppercase;font-weight:800;color:var(--accent)}
+  .pdesc{font-size:16px;margin:10px auto 18px}
+  .from{font-size:16px;color:#9a8f9e;text-decoration:line-through}
+  .price{font-size:clamp(56px,15vw,76px);font-weight:800;letter-spacing:-.04em;line-height:1;color:var(--ink);margin:4px 0 6px}
+  .price small{font-size:.42em;letter-spacing:0;vertical-align:.95em;margin-right:4px}
+  .inst{font-size:15px;color:var(--soft);margin-bottom:22px}
+  .btn{display:block;width:100%;background:var(--cta);color:#fff;text-decoration:none;font-weight:800;font-size:19px;padding:20px 18px;border-radius:999px;box-shadow:0 14px 30px -12px rgba(47,158,107,.7);transition:background .15s,transform .15s}
+  .btn:hover{background:var(--cta-hover);transform:translateY(-1px)}
+  .checks{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:8px;font-size:15.5px;font-weight:700;color:var(--ink)}
+  .checks li::before{content:"✓";color:var(--cta);margin-right:8px;font-weight:800}
+  .pay{margin-top:20px;font-size:13px;color:#9a8f9e;display:flex;gap:8px;justify-content:center;align-items:center;flex-wrap:wrap}
+  .pay span{border:1px solid var(--line);border-radius:6px;padding:3px 8px;font-weight:700;color:var(--soft);background:#fff}
+  footer{text-align:center;font-size:12.5px;color:#9a8f9e;padding:28px 0 40px;background:var(--tint)}
+  footer a{color:#9a8f9e}
+  @media (max-width:420px){ .brand{font-size:10.5px;letter-spacing:.2em} section{padding:46px 0} p{font-size:17px} .ig .n{font-size:26px} }
+</style>
+</head>
+<body>
+
+<div class="brand">Mapa do Lucro<b>.</b> · Carolina Scudeller</div>
+
+<!-- 1. O QUE A PESSOA QUER -->
+<section>
+  <div class="wrap">
+    <h1>Pare de vender<br><span class="hl">no escuro.</span></h1>
+    <p>Descubra onde seu brechó ganha e onde perde dinheiro, e veja finalmente o seu esforço virando <strong>lucro no seu bolso</strong>.</p>
+    <div class="mock fan"><img src="img/hero_fan.webp" alt="Mapa do Lucro em tablets: painel, lançamentos, gráficos e visão anual"></div>
+    <div class="cap">Planilha demo, com dados fictícios.</div>
+  </div>
+</section>
+
+<!-- 2. POR QUE ACREDITAR -->
+<section>
+  <div class="wrap">
+    <h2>Criada dentro de um brechó que fatura <span class="hl">6 dígitos por mês.</span></h2>
+    <p>Minha planilha antiga era tão complexa que preencher virava quase um castigo. Então passei meses construindo, testando no Banauá e lapidando o Mapa do Lucro do jeito que eu queria usar: <strong>simples, visual e gostoso de preencher.</strong></p>
+    <img loading="lazy" decoding="async" class="wide" src="img/loja.jpg" alt="Banauá lotado de clientes">
+    <div class="photos">
+      <img loading="lazy" decoding="async" src="img/carol.jpg" alt="Carolina Scudeller">
+      <img loading="lazy" decoding="async" src="img/fachada.jpg" alt="Cliente olhando as peças na arara do Banauá">
+    </div>
+    <div class="stats">
+      <div class="stat"><span>7 anos</span> operando</div>
+      <div class="stat"><span>6 dígitos</span>/mês</div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. O QUE A PESSOA RECEBE -->
+<section>
+  <div class="wrap">
+    <h2>Você lança as entradas e saídas. <span class="hl">O Mapa faz o resto.</span></h2>
+    <div class="mock wide2"><img loading="lazy" decoding="async" src="img/m_explode.webp" alt="Painel do Mapa do Lucro com os principais números em destaque"></div>
+    <ul class="list">
+      <li><span class="dot">1</span><div><b>Quanto você lucrou de verdade.</b> O lucro real do mês, sem chute.</div></li>
+      <li><span class="dot">2</span><div><b>Pra onde o dinheiro está indo.</b> Gastos por categoria, pra achar o que come seu lucro.</div></li>
+      <li><span class="dot">3</span><div><b>Quanto do lucro é seu.</b> O que você separou pra você e o que fica na caixa pra reinvestir.</div></li>
+      <li><span class="dot">4</span><div><b>Como o mês está andando.</b> Semana a semana, com quanto da meta você já bateu.</div></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 4. OUTRAS PESSOAS / PROVA -->
+<section>
+  <div class="wrap">
+    <h2>Você não está <span class="hl">sozinha nisso.</span></h2>
+    <div class="browser">
+      <div class="bbar"><i></i><i></i><i></i><span></span></div>
+      <div class="bbody">
+        <div class="bmeta">Comunidade · Carolina Scudeller <b>···</b></div>
+        <div class="brow"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="#5b5060" stroke-width="1.8"><circle cx="9" cy="8" r="3.2"/><path d="M3 19c.6-3.2 3-5 6-5s5.4 1.8 6 5"/><circle cx="17" cy="9" r="2.6"/><path d="M15.5 14.2c2.6-.3 4.8 1.3 5.5 4.3"/></svg>
+          <div><div class="bt">DONAS DE BRECHÓ</div><div class="bs">comunidade de Carolina Scudeller</div></div></div>
+      </div>
+      <div class="badge"><div class="bn">+1.200</div><div class="bl">donas de brechó na<br>nossa comunidade</div></div>
+    </div>
+    <div class="ig">
+      <div class="igc"><div class="h">banaua.brecho <span class="v">✓</span></div><div class="n">76,9 mil</div><div class="l">seguidores · loja física</div></div>
+      <div class="igc"><div class="h">compre.banaua <span class="v">✓</span></div><div class="n">32,2 mil</div><div class="l">seguidores · vendas online</div></div>
+    </div>
+    <!-- ESPAÇO RESERVADO: depoimentos reais e autorizados de compradoras do Mapa do Lucro entram aqui -->
+  </div>
+</section>
+
+<!-- 5. RETOMA O DESEJO -->
+<section>
+  <div class="wrap">
+    <h2>Você não precisa trabalhar mais. <span class="hl">Precisa ver pra onde o seu trabalho está indo.</span></h2>
+    <p>Em vez de fechar o mês sem saber se lucrou, você abre o Mapa e sabe <strong>o que cortar, o que repetir e quanto fica pra você.</strong></p>
+    <div class="mock wide2"><img loading="lazy" decoding="async" src="img/m_grid.webp" alt="Mapa do Lucro no celular e no tablet, com as telas da planilha ao fundo"></div>
+  </div>
+</section>
+
+<!-- 6. OFERTA -->
+<section class="offer" id="oferta">
+  <div class="wrap">
+    <div class="card">
+      <div class="mock sm"><img loading="lazy" decoding="async" src="img/offer_mock.webp" alt="Mapa do Lucro: painel, visão anual e lançamentos"></div>
+      <div class="pname">Mapa do Lucro</div>
+      <p class="pdesc">12 meses de lançamentos, painéis mensais, visão anual e instruções simples. Uma compra, pra todos os próximos anos.</p>
+      <div class="from">De R$ 127</div>
+      <div class="price"><small>R$</small>67</div>
+      <div class="inst">à vista ou 12x de R$ 6,89 no cartão</div>
+      <a class="btn" href="https://payfast.greenn.com.br/187923/offer/rG3bRf">Quero ver meu lucro de verdade</a>
+      <ul class="checks">
+        <li>Acesso imediato</li>
+        <li>7 dias de garantia incondicional</li>
+        <li>Pagamento único, acesso vitalício</li>
+      </ul>
+      <div class="pay">🔒 Compra 100% segura</div>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Mapa do Lucro · <a href="https://lp-carolina-planilha.vercel.app/privacidade">Política de privacidade</a></footer>
+
+<script>
+/* Leva as UTMs e parâmetros da visita até o checkout da Greenn */
+(function(){try{var q=location.search;if(!q)return;var p=new URLSearchParams(q);
+document.querySelectorAll('a[href*="greenn.com.br"]').forEach(function(a){var u=new URL(a.href);p.forEach(function(v,k){if(!u.searchParams.has(k))u.searchParams.set(k,v)});a.href=u.toString();});}catch(e){}
+try{window.clarity&&clarity("set","versao_pagina","clean")}catch(e){}})();
+</script>
+</body>
+</html>
